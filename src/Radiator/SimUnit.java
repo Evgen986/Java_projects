@@ -7,7 +7,7 @@ public class SimUnit {
 
     SimUnit(String type) {
         botType = type;
-        System.out.println(type + powerUse());
+        System.out.println("Мощность объекта -" + " " +type + " " + "состовляет:" + " " + powerUse());
     }
 
     // Переменная возвращающая значение мощности (powerUse)
