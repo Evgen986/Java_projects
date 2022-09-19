@@ -2,14 +2,16 @@ package Radiator;
 
 public class SimUnit {
     String botType;
+
     SimUnit(String type) {
-        botType=type;
+        botType = type;
+        System.out.println(type + powerUse());
     }
-    int powerUse(){
-        if ("Тепловая машина".equals(botType)){
+
+    int powerUse() {
+        if ("Тепловая машина".equals(botType)) {
             return 2;
-        }
-        else{
+        } else {
             return 4;
         }
     }
