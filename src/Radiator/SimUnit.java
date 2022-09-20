@@ -1,13 +1,17 @@
 package Radiator;
 
 public class SimUnit {
+
+    // Статическая переменная powerCount создана для подсчета общей мощности объектов.
+    static int powerCount = 0;
     String botType;
 
     // Конструктор объекта SimUnit
 
     SimUnit(String type) {
         botType = type;
-        System.out.println("Мощность объекта -" + " " +type + " " + "состовляет:" + " " + powerUse());
+        powerCount= powerUse() + powerCount;
+        System.out.println("Мощность объекта -" + " " +type + " " + "составляет:" + " " + powerUse() + "." + " Общая мощность составит -" + " " + powerCount);
     }
 
     // Переменная возвращающая значение мощности (powerUse)
