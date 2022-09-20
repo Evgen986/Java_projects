@@ -7,8 +7,9 @@ class V3Radiator extends V2Radiator{
     //Конструктор объекта V3Radiator
     V3Radiator(ArrayList lglist){
 
-        // Метод родителького класа V2Radiator, который обращется к конструктору V2Radiator
-        // и повторно запускает цикл for из класса V2Radiator.
+        /* Метод родителького класа V2Radiator, который обращется к конструктору V2Radiator
+           и повторно запускает цикл for из класса V2Radiator.
+        */
         super(lglist);
 
 
