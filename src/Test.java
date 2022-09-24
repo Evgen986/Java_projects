@@ -1,10 +1,16 @@
 public class Test {
+
+    Integer i=0;
+    int j;
     public static void main(String[] args) {
-        int [] a = {3, 5, 6, 7, 9};
-        int sum = 0;
-        for (int i=4; i>0; i--){
-            sum=sum+a[i];
-        }
-        System.out.println(sum);
+        Test t = new Test();
+        t.go();
+
+    }
+
+    public void go(){
+        j=i;
+        System.out.println(j);
+        System.out.println(i);
     }
 }
