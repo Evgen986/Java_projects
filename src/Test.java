@@ -1,6 +1,16 @@
 public class Test {
-    static final int x=12;
-    public void go(final int x){
-        System.out.println(x);
+
+    Integer i=0;
+    int j;
+    public static void main(String[] args) {
+        Test t = new Test();
+        t.go();
+
+    }
+
+    public void go(){
+        j=i;
+        System.out.println(j);
+        System.out.println(i);
     }
 }
