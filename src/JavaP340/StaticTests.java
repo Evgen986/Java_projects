@@ -6,7 +6,7 @@ public class StaticTests extends StaticSuper{
     static {
         // 2 этап выполнения кода
         rand=(int) (Math.random() * 6);
-        System.out.println("Статический блок"+ rand);
+        System.out.println("Статический блок" + " " + rand);
     }
 
     StaticTests (){
